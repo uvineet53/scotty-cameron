@@ -51,6 +51,7 @@ def scrape_main_site(headers):
         'https://www.scottycameron.com/store/', headers=hdrs)
     soup = BeautifulSoup(response.text.replace('id', 'ref').replace(
         'data-test-selector', 'id'), 'html.parser')
+    print(soup)
     products = soup.find_all('article', {'class': "product-item"})
     print(len(products))
     for product in products:
