@@ -1,1 +1,1 @@
-monitor: python snipes.py
+monitor: python scottycam.py
